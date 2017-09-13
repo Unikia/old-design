@@ -1,0 +1,272 @@
+/* 
+ * @project: Green United
+ * @author: Unikia Design
+ * @license: Esta obra está sujeta a la licencia Reconocimiento-NoComercial 4.0 Internacional de Creative Commons. Para ver una copia de esta licencia, visite http://creativecommons.org/licenses/by-nc/4.0/.
+ */
+
+html, body { 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 16px; 
+    max-width: 100%;
+}
+
+/* Typography styles */
+
+h1, h2, h3, h4, h5, h6 { 
+    color: #4B4B4B; 
+    font-weight: 300; 
+}
+
+hr { 
+    border: none;
+    height: 1px;
+    color: #8b8b8b;
+    background-color: #8b8b8b;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    outline: none;
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid #c5c5c5;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* Unordered styles */
+
+#wrapper {
+    background-color: #1ABC9C;
+    margin-bottom: 0;
+    z-index: 0;
+}
+
+.content {
+    padding: 24px;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+.content a,
+.content a:hover,
+.content a:focus,
+.content a:active {
+    color: #14937a
+}
+
+.heading-section {
+    margin-top: 24px;
+}
+
+#splash {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    background: url('img/logo.png') no-repeat center center;
+    background-size: 217px;
+    background-color: #1ABC9C;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+.splash-icon {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -20px;
+    font-size: 48px;
+}
+
+a i {
+    color: #fff;
+    overflow: hidden;
+}
+
+.img-list {
+    height: 60px;
+}
+
+.img-list li {
+    display: inline-block;
+    margin-left: 18px;
+}
+
+#footer {
+    color: #fff;
+    text-align: right;
+}
+
+#footer a {
+    color: #fff;
+}
+
+.fl { float: left }
+.fr { float: right }
+
+.pl { text-align: left }
+.pr { text-align: right }
+
+/* Price Tables */
+
+/* known as clearfix */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;  /* For IE 6/7 */
+}
+
+.pricing-table {
+    text-align: center;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.pricing-table .heading {
+    color: #9C9E9F;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    border: 1px 0 solid #8b8b8b;
+}
+
+/* .block {
+    width: 30%;    
+    margin: 0 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+} */
+
+/* Shared properties */
+
+.title, .pt-footer {
+    color: #FEFEFE;
+    line-height: 2.5;
+    position: relative;
+}
+
+.table-content {
+    position: relative;
+    color: #fff;
+    padding: 6px 0 12px 0;
+}
+
+/* Table Arrows */
+
+.table-content:after, .table-content:before,.pt-footer:before,.pt-footer:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    border-width: 5px;
+}
+
+.pt-footer:after, 
+.pt-footer:before {
+    top: 0;
+}
+
+.content:after, 
+.pt-footer:after {
+	border-color: rgba(136, 183, 213, 0);	
+	border-width: 5px;
+	margin-left: -5px;
+}
+
+.price {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+
+.price span {    
+    font-size: 6rem;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 1.5rem;    
+    position: absolute;    
+    top: 12px;
+    left: -12px;
+}
+
+.price sub { font-size: 1.5rem }
+
+.hint {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.features {
+    list-style-type: none;    
+    background: #FFFFFF;
+    text-align: left;
+    color: #9C9C9C;
+    padding: 12px 25%;
+    font-size: 0.9rem;
+    min-height: 350px;
+}
+
+.features li {
+    padding: 15px 0;
+    width: 100%;
+}
+
+.features li span {
+   padding-right: 0.4rem; 
+}
+
+.pt-footer {
+    font-size: 0.95rem;
+}
+
+/* Personal */
+.personal .title { background: #53CFE9; }
+.personal .table-content,
+.personal .pt-footer { background: #53CFE9; }
+.personal .table-content:after { border-top-color: #53CFE9; }
+.personal .pt-footer:after { border-top-color: #FFFFFF; }
+
+/* Professional */
+.professional .title { background: #1ABC9C; }
+.professional .table-content, 
+.professional .pt-footer { background: #1ABC9C; }
+.professional .table-content:after {	border-top-color: #1ABC9C; }
+.professional .pt-footer:after { border-top-color: #FFFFFF; }
+
+/* Business */
+.business .title { background: #E3536C; }
+.business .table-content, 
+.business .pt-footer { background: #EB6379; }
+.business .table-content:after {	border-top-color: #EB6379; }
+.business .pt-footer:after { border-top-color: #FFFFFF;	}
